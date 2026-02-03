@@ -1,0 +1,135 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #F9F7FC;
+}
+
+.hero-content {
+  max-width: 50%;
+  animation: fadeUp 0.8s ease;
+}
+.top-badge {
+  background: #EDE4FF;
+  color: #6A4FBF;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 2px solid #D8C8FF;
+  animation: fadeUp 0.8s ease;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3c036d;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  width: size 20px; ;
+  margin-top: 10px;
+  color: #7c6c81;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #C7A4FF;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #b48df5;
+}
+
+.btn.secondary {
+  border: 2px solid #C7A4FF;
+  color: #6A4FBF;
+}
+
+.btn.secondary:hover {
+  background: #EDE4FF;
+}
+
+.hero-image img {
+  width: 260px;
+  height: auto;
+  animation: fadeUp 1s ease;
+}
+.hero-bio {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5a5a5a;
+  max-width: 480px;
+}
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.typing {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #C7A4FF;
+  animation: typing 2.5s steps(20) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 388px } /* عدّلي الرقم حسب طول اسمك */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.hero-image img {
+  width: 260px;
+  height: auto;
+  animation: fadeUp 1s ease;
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-10px) scale(1.05);
+}

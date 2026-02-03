@@ -1,0 +1,56 @@
+.skills {
+  padding: 100px 10%;
+  background: #F9F7FC;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #6A4FBF;
+  margin-bottom: 40px;
+}
+
+/* Slider container */
+.skills-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Track that moves */
+.slide-track {
+  display: flex;
+  width: calc(180px * 12); /* عدد العناصر × عرض العنصر */
+  animation: scroll 18s linear infinite;
+}
+
+/* Skill box */
+.skill-box {
+  width: 180px;
+  height: 100px;
+  margin: 0 10px;
+  background: #ffffff;
+  border: 2px solid #D8C8FF;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.skill-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
